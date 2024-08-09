@@ -161,6 +161,9 @@ body {
 
 /* starting of Main Section */
 
+.Lambo_div_holder {
+    display: flex;
+}
 
 .Lambo_text_section {
     flex: 1;
@@ -244,9 +247,6 @@ body {
 }
 
 
-.Lambo_div_holder {
-    display: flex;
-}
 
 
 .Lambo_hero_img {
@@ -280,3 +280,22 @@ body {
     transform: translate(30%, -300%);
     
 }
+
+/* 
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .Lambo_div_holder {
+        flex-direction: row;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .Lambo_image_section {
+        background-color: green;
+    }
+} */
