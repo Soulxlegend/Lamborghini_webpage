@@ -13,6 +13,7 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .Lambo_header {
@@ -29,6 +30,7 @@ body {
     width: 80%;
     height: 2vh;
     width: 80%;
+    transition: 0.5s ease-in-out all;
 }
 
 .Lambo_ul {
@@ -36,7 +38,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* transform: translateY(150%); */
 }
 
 .nav_anchor {
@@ -90,8 +91,8 @@ body {
 
 .toggle_ham {
     position: absolute;
-    top: -14px;
-    left: 20%;
+    top: 5%;
+    right: 1.7%;
     height: 30px;
     width: 30px;
     z-index: 5;
@@ -116,26 +117,35 @@ body {
     transform: rotate(-45deg);
 }
 
-
+.toggle_ham:checked ~ .Lambo_nav {
+    right: 0;
+}
 
 @media screen and (max-width: 768px) {
-
     .hamburger , .toggle_ham {
         display: block;
     }
-
+    
     .Lambo_header {
         justify-content: space-between;
         margin: 0 1.5vw;
     }
     
+
     .Lambo_nav {
-        height: 100%;
         position: absolute;
-        top: 10%;
+        top: 13.5%;
         right: -300px;
+        height: 100%;
         width: 30%;
-        background: #000;
+        backdrop-filter: blur(10px);
+        z-index: 3;
+        background-color: red;
+        border-radius: 4vw 0 0 4vw;
+    }
+    
+    .ham_holder:checked ~ .Lambo_nav {
+        right: 0;
     }
 
     .Lambo_ul {
@@ -143,18 +153,16 @@ body {
         flex-direction: column;
         gap: 5vh;
     }
-
+    
     .nav_anchor {
         font-size: 2.5vw;
         color: white;
     }
-
-    .toggle_ham:checked ~ .Lambo_nav {
-        right: 0;
-    }
-
+    
+     
 }
 
+/* the header part is Done here */
 
 
 
@@ -170,18 +178,3 @@ body {
 
 
 
-
-
-
-
-/* .wc_text h1 {
-    text-transform: uppercase;
-    font-size: 5vw;
-    background-image: url("Firefly\ 20240624211536.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-} */
