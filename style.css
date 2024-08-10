@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 body {
@@ -165,19 +168,185 @@ body {
      
 }
 
-/* the header part is Done here */
+/* starting of Main Section */
+
+
+.Lambo_div_holder {
+    display: flex;
+}
+
+.Lambo_text_section {
+    flex: 1;
+    margin-left: 2vw;
+    color: #fff; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 40vw;
+    position: relative;
+    /* background-color: green; */
+    
+}
+
+.title_text {
+    display: flex;
+}
+
+.Lambo_title {
+    margin-top: 6vh;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+
+.text_blur {
+    backdrop-filter: blur(4px);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 7vh;
+    transform: translateX(-25px);
+    background: rgb(112,112,112);
+    background: linear-gradient(329deg, rgba(112,112,112,0) 83%, rgba(255,255,255,1) 100%);
+}
+
+.subheading {
+    text-transform: uppercase;
+    width: 16vw;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-style: italic;
+    margin: 6vh 0;
+}
+.description {
+    width: 21vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 4vh;
+    text-transform: uppercase;
+}
+
+.acceleration {
+    font-weight: bold;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bccdd4;
+    padding: 10px;
+    border-radius: 30px;
+    width: 10rem;
+    margin-bottom: 1.8vh;
+    
+}
+
+.cart_price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: black; 
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: black;
+}
+
+
+.Lambo_hero_img {
+    width: 100%;
+    height: 60rem;
+    transform: scaleX(-1);
+}
+
+.Lambo_img_holder {
+   transform: translateY(-15%);
+}
+
+.image_blur {
+    backdrop-filter: blur(4px);
+    background: rgb(112,112,112);
+    background: linear-gradient(294deg, rgba(112,112,112,0) 79%, rgba(252,150,150,1) 100%);
+    height: 180px ;
+    width: 180px ;
+    border-radius: 50%;
+    transform: translate(270%, -400%);
+    
+}
+
+.image_blur1 {
+    backdrop-filter: blur(6px);
+    background: rgb(247,247,247);
+    background: linear-gradient(20deg, rgba(247,247,247,0) 79%, rgba(80,80,80,1) 100%);
+    height: 200px ;
+    width: 200px ;
+    border-radius: 50%;
+    transform: translate(30%, -300%);
+    
+}
+
+.Lambo_div_holder {
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .Lambo_div_holder {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+
+    .Lambo_image_section {
+        height: 85vh;
+    }
+
+    .Lambo_img_holder {
+        transform: translateY(-30%);
+     }
+
+
+
+     .image_blur {
+        transform: translate(330%, -500%);
+     }
+
+     .image_blur1 {
+        transform: translate(30%, -350%);
+     }
+
+    .Lambo_text_section {
+        /* background-color: #fff; */
+        width: 90vw;
+    }
+
+    .Lambo_title {
+        font-size: 5vw;
+    }
+
+    .subheading {
+        width: 50vw;
+        font-size: 3vw;
+    }
+
+    .description {
+        width: 60vw;
+        font-size: 2vw;
+    }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+}
 
