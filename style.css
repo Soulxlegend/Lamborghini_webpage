@@ -168,7 +168,11 @@ body {
      
 }
 
-/* the header part is Done here */
+
+/* starting of Main Section */
+
+
+
 
 .Lambo_div_holder {
     display: flex;
@@ -316,6 +320,7 @@ body {
      }
 
 
+
      .image_blur {
         transform: translate(330%, -500%);
      }
@@ -342,7 +347,5 @@ body {
         font-size: 2vw;
     }
 
-
-
-
 }
+
