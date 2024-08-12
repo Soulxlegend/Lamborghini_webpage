@@ -5,12 +5,13 @@
     font-family: "Barlow", sans-serif;
     font-weight: 900;
     font-style: normal;
+    color: white;
 }
 
 body {
     font-family: Arial, sans-serif;
     background: rgb(0,0,0);
-    background: linear-gradient(162deg, rgba(0,0,0,1) 77%, rgba(143,0,0,1) 100%);
+    background: linear-gradient(176deg, rgba(0,0,0,1) 84%, rgba(54,0,0,0.8855917366946778) 100%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -175,4 +176,89 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.section_holder {
+    margin-top: -10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Lambo_left_section {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    
+    /* background-color: red; */
+}
+
+
+.Lambo_right_section {
+    width: 50%;
+    height: 50%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    /* background-color: red; */
+}
+
+.Image_section {
+    backdrop-filter: blur(12px);
+    border-radius: 2vh 1vh 2vh 1vh;
+    height: 35vh;
+    width: 20vw;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out all;
+
+}
+
+.Car_img {
+    transform: translateY(20%);
+    width: 140%;
+    transition: 0.5s ease-in-out all;
+}
+
+.Lambo_left_section .Lambo_upper .Image_section {
+    background: rgb(11,11,11);
+    background: linear-gradient(162deg, rgba(11,11,11,0.835171568627451) 17%, rgba(54,2,2,0.9836309523809523) 100%);
+}
+
+
+
+.Lambo_left_section .Lambo_lower .Image_section {
+    background: rgb(18,18,18);
+    background: linear-gradient(25deg, rgba(18,18,18,0.9528186274509804) 0%, rgba(59,0,0,0.8855917366946778) 100%);
+}
+
+.Lambo_right_section .Lambo_upper .Image_section {
+    background: rgb(59,0,0);
+    background: linear-gradient(25deg, rgba(59,0,0,0.8855917366946778) 0%, rgba(18,18,18,0.9528186274509804) 76%);
+}
+
+
+.Lambo_right_section .Lambo_lower .Image_section {
+    background: rgb(59,0,0);
+    background: linear-gradient(160deg, rgba(59,0,0,0.8855917366946778) 0%, rgba(18,18,18,0.9528186274509804) 76%);
+}
+
+.blur_eff {
+    border-radius: 50%;
+    filter: blur(100px);
+    height: 8em;
+    width: 8em;
+    background-color: red;
+}
+
+.Lambo_left_section .blur_eff {
+    transform: translate(250%,350%);
+}
+
+.Lambo_right_section .blur_eff {
+    transform: translate(-50%,350%);
 }
