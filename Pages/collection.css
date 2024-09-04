@@ -5,7 +5,11 @@
     font-family: "Barlow", sans-serif;
     font-weight: 900;
     font-style: normal;
-    color: white;
+    /* color: white; */
+}
+
+html , body {
+    overflow-x: hidden;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .Lambo_header {
@@ -27,14 +31,10 @@ body {
 }
 
 .Lambo_nav {
-    font-size: 1.2vw;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
     width: 80%;
     height: 2vh;
-    width: 80%;
     transition: 0.5s ease-in-out all;
+    z-index: 1;
 }
 
 .Lambo_ul {
@@ -44,26 +44,24 @@ body {
     align-items: center;
 }
 
+
 .nav_anchor {
+    text-transform: uppercase;
     text-decoration: none;
-    color: white;
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    cursor: pointer;
+    color: white;
 }
 
-.Lambo_links.active {
+.nav_anchor.active {
     text-decoration: underline; 
     font-weight: bold; 
     color: #fcbf24; 
-  }
+}
 
 .nav_anchor:hover {
     color: red;
 }
-
-.ham_holder {
-    position: relative;
-}
-
 
 
 .hamburger {
@@ -145,6 +143,7 @@ body {
         position: absolute;
         height: 50%;
         width: 30%;
+        /* right: -100%; */
         backdrop-filter: blur(10px);
         z-index: 3;
         border-radius: 4vw 0 0 4vw;
@@ -164,9 +163,7 @@ body {
     .nav_anchor {
         font-size: 2.5vw;
         color: white;
-    }
-    
-     
+    }     
 }
 
 

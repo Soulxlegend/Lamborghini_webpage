@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+html , body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: rgb(112,112,112);
@@ -16,7 +20,6 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 .Lambo_header {
@@ -34,6 +37,7 @@ body {
     height: 2vh;
     width: 80%;
     transition: 0.5s ease-in-out all;
+    z-index: 1;
 }
 
 .Lambo_ul {
